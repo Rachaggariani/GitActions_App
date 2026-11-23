@@ -4,7 +4,7 @@ services:
     build:
       context: ./angular-app
       dockerfile: Dockerfile
-    image: nouran10/angular
+    image: racha00/angular
     ports:
       - "4200:80"
     depends_on:
@@ -12,7 +12,7 @@ services:
     restart: always
 
   spring-boot-app:
-    image: nouran10/spring
+    image: racha00/spring
     ports:
       - "8081:8081"
     environment:

@@ -18,8 +18,8 @@ jobs:
 
       - name: build frontend 
         run: |
-          docker build -t nouran10/angular angular-app
-          docker push nouran10/angular
+          docker build -t racha00/angular angular-app
+          docker push racha00/angular
 
       - name: build artifact 
         run: |
@@ -29,6 +29,6 @@ jobs:
 
       - name: build backend 
         run: |
-          docker build -t nouran10/spring springboot/app
-          docker push nouran10/spring
+          docker build -t racha00/spring springboot/app
+          docker push racha00/spring
 
