@@ -12,6 +12,9 @@ services:
     restart: always
 
   spring-boot-app:
+    build:
+      context: ./springboot/app
+      dockerfile: Dockerfile
     image: racha00/spring
     ports:
       - "8081:8081"
